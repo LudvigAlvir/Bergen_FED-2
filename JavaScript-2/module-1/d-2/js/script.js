@@ -74,7 +74,7 @@ function testfunc(arr) {
 			break;
 		} else if (arr[i] % 2 === 0) {
 			continue;
-		} else if (typeof arr[i] == "number") {
+		} else if (typeof arr[i] !== "number") {
 			return;
 		} else {
 			console.log(arr[i]);
@@ -86,7 +86,7 @@ function testfunc(arr) {
 			break;
 		} else if (nr % 2 === 0) {
 			continue;
-		} else if (typeof nr == "number") {
+		} else if (typeof nr !== "number") {
 			return;
 		} else {
 			console.log(nr);
