@@ -1,0 +1,42 @@
+[
+	{
+		"post_id": 1,
+		"author_id": 1,
+		"author": "John Doe",
+		"title": "My first post",
+		"category": "travel",
+		"content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod, nisl quis tincidunt ultricies, nunc nisl ultricies nunc, quis ultricies ni",
+		"date": "2023-01-01",
+		"likes": 5
+	},
+	{
+		"post_id": 2,
+		"author_id": 1,
+		"author": "John Doe",
+		"title": "My second post",
+		"category": "travel",
+		"content": "Lorem ipsum dolor sit amet, mod, nisl quis tincidunt ultricies, nunc nisl ultricies nunc, quis ultricies ni",
+		"date": "2023-01-02",
+		"likes": 5
+	},
+	{
+		"post_id": 3,
+		"author_id": 1,
+		"author": "John Doe",
+		"title": "My third post",
+		"category": "sport",
+		"content": "Lorem ipsum dolor sit amet, mod, nisl quis tincidunt ultricies, nunc nisl ultricies nunc, quis ultricies ni",
+		"date": "2023-01-03",
+		"likes": 5
+	},
+	{
+		"post_id": 4,
+		"author_id": 2,
+		"author": "Jane Doe",
+		"title": "Hockey",
+		"category": "sport",
+		"content": "I like playing hockey",
+		"date": "2023-01-04",
+		"likes": 5
+	}
+]
