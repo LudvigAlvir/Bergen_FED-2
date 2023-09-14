@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Jhon",
+		"birth": "2003-06-12",
+		"rating": 1850
+	},
+	{
+		"name": "Eirik",
+		"birth": "2000-07-10",
+		"rating": 500
+	},
+	{
+		"name": "Kristoffer",
+		"birth": "1999-06-23",
+		"rating": 501
+	},
+	{
+		"name": "Jonathan",
+		"birth": "1994-11-14",
+		"rating": 750
+	},
+	{
+		"name": "Bilal",
+		"birth": "1998-07-21",
+		"rating": 502
+	},
+	{
+		"name": "Samail",
+		"birth": "2001-10-07",
+		"rating": 2000
+	},
+	{
+		"name": "Ludvig",
+		"birth": "1996-05-27",
+		"rating": 1200
+	}
+]
