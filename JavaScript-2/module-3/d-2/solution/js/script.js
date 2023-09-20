@@ -4,15 +4,18 @@ import Item from "./components/Item.js";
 import Input from "./components/Input.js";
 
 function render() {
-	const root = document.querySelector("body");
+	const root = document.querySelector("#root");
 	root.innerHTML = "";
 	root.append(Header());
 	const main = document.createElement("main");
 	main.classList.add("main");
+	const title = document.createElement("h2");
+	title.innerText = "A simple Todo List";
+	main.append(title);
 	const input = Input();
 	main.append(input);
 	main.append(
-		Button("Add", () => {
+		Button("Add", "primary", () => {
 			if (localStorage.getItem("list")) {
 				const items = localStorage.getItem("list");
 				const list = JSON.parse(items);
@@ -28,22 +31,23 @@ function render() {
 	if (localStorage.getItem("list")) {
 		const items = localStorage.getItem("list");
 		const list = JSON.parse(items);
-		const ul = document.createElement("ul");
-		ul.classList.add("list");
+		const container = document.createElement("div");
+		container.classList.add("list");
 		list.forEach((item, i) => {
-			ul.append(
+			container.append(
 				Item(item),
-				Button("Remove", () => {
+				Button("Remove", "danger", () => {
 					const list = JSON.parse(localStorage.getItem("list"));
 					const newList = list.filter((item, index) => index !== i);
 					console.log(i, list, newList);
 					localStorage.setItem("list", JSON.stringify(newList));
 
 					render();
-				})
+				}),
+				document.createElement("hr")
 			);
 		});
-		main.append(ul);
+		main.append(container);
 	}
 	root.append(main);
 }
