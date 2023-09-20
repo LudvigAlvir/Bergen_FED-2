@@ -1,5 +1,6 @@
 import Button from "./components/Button.js";
 import Card from "./components/Card.js";
+import { Test as test, Test2 as test2 } from "./components/Test.js";
 function render() {
 	const root = document.querySelector("#root");
 	const button = Button("Click me", () => {

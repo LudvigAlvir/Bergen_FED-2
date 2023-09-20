@@ -53,3 +53,13 @@ input {
 	padding: 1rem;
 	width: 600px;
 }
+
+form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.button:hover {
+	cursor: pointer;
+}

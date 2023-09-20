@@ -1,11 +1,9 @@
-// create a navbar using create element
-
 export default function Nav() {
 	const nav = document.createElement("nav");
 	nav.classList.add("nav");
-	nav.innerHTML = `
-        <a href="#" class="nav__link">About</a>
-       
-    `;
+	const navLink = document.createElement("a");
+	navLink.classList.add("nav__link");
+	navLink.innerText = "About";
+	nav.append(navLink);
 	return nav;
 }

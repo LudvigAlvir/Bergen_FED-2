@@ -12,9 +12,10 @@ function render() {
 	const title = document.createElement("h2");
 	title.innerText = "A simple Todo List";
 	main.append(title);
+	const form = document.createElement("form");
 	const input = Input();
-	main.append(input);
-	main.append(
+	form.append(input);
+	form.append(
 		Button("Add", "primary", () => {
 			if (localStorage.getItem("list")) {
 				const items = localStorage.getItem("list");
@@ -28,6 +29,7 @@ function render() {
 			}
 		})
 	);
+	main.append(form);
 	if (localStorage.getItem("list")) {
 		const items = localStorage.getItem("list");
 		const list = JSON.parse(items);
