@@ -14,6 +14,7 @@ function render() {
 	main.append(title);
 	const form = document.createElement("form");
 	const input = Input();
+
 	form.append(input);
 	form.append(
 		Button("Add", "primary", () => {
@@ -29,6 +30,7 @@ function render() {
 			}
 		})
 	);
+
 	main.append(form);
 	if (localStorage.getItem("list")) {
 		const items = localStorage.getItem("list");
@@ -55,3 +57,5 @@ function render() {
 }
 
 render();
+
+const testArr = [1, 2, 3, 4, 5, 5, 12];
