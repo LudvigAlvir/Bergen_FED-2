@@ -1,0 +1,22 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	flex-direction: column;
+	margin: 2rem;
+}
+.container div {
+	background-color: #f7f4f4;
+	width: 80%;
+	max-width: 40rem;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 5px;
+}
+form > * {
+	display: block;
+}
+
+form {
+	margin: 1rem;
+}
