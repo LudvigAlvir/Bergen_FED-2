@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: changing to directory
-        run: cd workflow/module-3/d-4
+        run: cd Workflow/module-3/d-4
       - name: Install Dependencies
         run: npm i
       - name: Run test script
